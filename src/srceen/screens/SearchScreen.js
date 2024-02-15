@@ -45,7 +45,7 @@ export default ({route}) => {
   const [to, setTo] = useState();
   const navigation = useNavigation();
   const handleBack = () => {
-    if (screen == 'Home') {
+    if (screen == 'StaySearch') {
       navigation.navigate('Home', {
         screen: 'Home',
       });
@@ -80,7 +80,7 @@ export default ({route}) => {
   }, [keyword, dispatch, from, to]);
 
   const handleBackTo = item => {
-    if (screen == 'Stay') {
+    if (screen == 'StaySearch') {
       setSearchStay(item);
       navigation.navigate('Home', {
         screen: 'Home',

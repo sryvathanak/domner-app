@@ -76,7 +76,7 @@ export default function HotelScreen() {
 
   const handleSearch = v => {
     navigation.navigate('Search', {
-      screen: 'Stay',
+      screen: 'StaySearch',
       api: 'list-place',
     });
   };
